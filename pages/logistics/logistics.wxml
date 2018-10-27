@@ -1,0 +1,27 @@
+<view class='section'>
+  <block wx:for="{{list.goods}}" wx:for-item="item">
+    <view class='flex'>
+      <view class='left'>
+        <image src='{{item.img}}' />
+      </view>
+      <view class='right'>
+        <view>{{item.name}}</view>
+        <view>顺丰快递：{{item.orderNumber}}</view>
+        <view>客服热线：606060</view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class='section1'>
+  <view>物流跟踪</view>
+  <view class='message'>
+    <view class='solie'></view>
+    <block wx:for="{{list.message}}" wx:for-item="item">
+      <view>
+        <view class='circle'></view>
+        <view class='address'>{{item.address}}</view>
+        <view class='time'>{{item.time}}</view>
+      </view>
+    </block>
+  </view>
+</view>

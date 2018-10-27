@@ -1,0 +1,6 @@
+<view class="section container">
+<view><image src='/static/images/search.png' /></view>
+<input type='search' value='{{value}}' bindinput="search" />
+<view catchtap='clear'>清空</view>
+</view>
+<navigator url='' open-type='navigator' wx:for="{{list}}" wx:for-item="item" data-id="id{{item.id}}" class='list'>{{item.text}}</navigator>
